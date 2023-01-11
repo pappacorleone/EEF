@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Off-Grid Solar Energy Install Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 3px;
+      }
+
+      h2 {
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .progress-bar {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 3px;
+        background-color: #e8e8e8;
+      }
+
+      .progress {
+        width: 0;
+        background-color: #4cb0df;
+        border-radius: 3px;
+        height: 18px;
+        animation: increase 2s;
+      }
+
+      @keyframes increase {
+        0% {
+          width: 0%;
+        }
+
+        100% {
+          width: 80%;
+        }
+      }
+
+      .graph {
+        width: 100%;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        background-color: #e8e8e8;
+        border-radius: 3px;
+      }
+
+      .graph-container {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+        background-color: #e8e8e8;
+        border-radius: 3px;
+      }
+
+      .graph-bar {
+        width: 8%;
+        background-color: #4cb0df;
+        border-radius: 3px;
+        height: 18px;
+        animation: increase 2s;
+      }
+
+      .input-container {
+        width: 100%;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        background-color: #e8e8e8;
+        border-radius: 3px;
+      }
+
+      input {
+        width: 100%;
+        height: 38px;
+        padding: 0 10px;
+        font-size: 1.2em;
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        border: none;
+        margin-bottom: 10px;
+      }
+
+      .dropdown {
+        width: 100%;
+        height: 38px;
+        padding: 0 10px;
+        font-size: 1.2em;
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        border: none;
+      }
+
+      button {
+        width: 100%;
+        height: 38px;
+        font-size: 1.2em;
+        background-color: #4cb0df;
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+        transition: all 0.3s linear;
+      }
+
+      button:hover {
+        background-color: #3a97cb;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Let's get your off-grid solar energy setup</h2>
+      <h3>Step 1: Design your system</h3>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="graph-container">
+        <h3>Potential Savings</h3>
+        <div class="graph">
+          <div class="graph-bar"></div>
+        </div>
+      </div>
+      <div class="input-container">
+        <h3>Your current monthly electricity bill</h3>
+        <input type="text" placeholder="Enter your monthly electricity bill">
+        <h3>Tell us more about load-shedding in your area</h3>
+        <select class="dropdown">
+          <option>Mostly in daytime</option>
+          <option>Mostly at night</option>
+          <option>Not scheduled</option>
+        </select>
+        <button>Next Step</button>
+      </div>
+    </div>
+  </body>
+</html>
